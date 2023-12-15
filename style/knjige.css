@@ -1,0 +1,226 @@
+
+body{
+    background-color: burlywood;
+}
+body {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+.pocetak {
+    color: white;
+    display: inline;
+    display: inline-flex;
+    padding: 1rem;
+    background-image: url('../jpg/pozadina3.jpg');
+}
+@keyframes float{
+    0%{
+        box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0, 6);
+        transform: translateY();
+    }
+    50%{
+        box-shadow: 0px 25px 15px 0px rgba(0, 0, 0, 0, 2);
+        transform: translateY(-20px);
+    }
+    100%{
+        box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0, 6);
+        transform: translateY(0px);
+    }
+}
+.container{
+    width: 10%;
+    height: 10%;
+    display: flex;
+    margin: 1.5rem;
+}
+.logo{
+    width: 150px;
+    height: 150px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0, 6);
+    transform:translateY(0px);
+    animation: float 6s ease-in-out infinite;
+}
+ .pocetak h1{
+    color: #141414;
+    text-align: center;
+    padding:2rem;
+    text-decoration: none;
+    font-size: 5em;
+    border: solid 1rem 	#ca924f;
+    background-color: 	#ca924f;
+    margin: 0.5rem 7rem; 
+    border-radius: 5rem;  
+    width: 60rem; 
+}
+nav {
+    background-color:blanchedalmond;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+nav a {
+    float:inline-start;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 0rem 3rem;
+    text-decoration: none;
+    margin: 1rem 1.5rem;
+    align-items:center;
+    font-size: 2em;
+    justify-content: space-between;
+    
+}
+nav a:hover{
+    font-size: 3em;
+    font-style: oblique;
+    text-shadow: 3px 5px 3px #6b3e26;
+    transition: 0.5s;
+}
+.slika{
+    display: flex;
+    align-items:flex-start;
+}
+.Autor  h1{
+    text-align: center;
+    font-size: 70px;
+    text-decoration:wavy;
+}
+.Autor h2{
+    text-align: left;
+    display:block;
+    margin: 50px;
+    font-size: 60px;
+}
+.Autor img{
+    height: auto;
+    width: 400px;
+    margin: 25px;
+    box-shadow: rgba(254, 205, 211, 0.1) 0px 4px 16px, 
+    rgba(254,205,211,0.1) 0px 8px 24px, 
+    rgba(254,205,211, 0.1) 0px 16px 56px;
+
+    
+}
+.Autor p{
+    display: flex;
+    text-align: justify;
+    font-size: 20px;
+    width: 900px; 
+    font-family: 'pacifico';
+    margin: auto 20px;
+}
+.Knjiga{
+    width: 1400px;
+    height: 900px;
+    margin: 50px auto;
+
+    box-shadow: rgba(0, 0, 0, 0.4) -5px 5px,
+     rgba(0, 0, 0, 0.3) -10px 10px, 
+     rgba(0, 46, 170, 0.2) -15px 15px, 
+     rgba(0, 0, 0, 0.1) -10px 10px, 
+     rgba(0, 0, 0, 0.05) -0 0;
+
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    margin: 50px auto;
+}
+
+.Knjiga h1{
+    text-align: center;
+    text-decoration: underline;
+    margin: 15px;
+    padding: 5px;
+
+}
+.Knjiga .o-knjizi p{
+    font-size: 20px;
+    text-align: justify;
+    padding: 30px;
+    margin-left: 50px;
+    font-family: 'Roboto Slab';
+}
+.Knjiga .o-knjizi, .Knjiga .slika{
+    width: 50%;
+    height: 100%;
+}
+@media only screen and (min-width: 320px) and (max-width:1023px){
+    .logo{
+        display: none;
+    }
+    nav a {
+        padding: 10px 8px ;
+        font-size: 13px;
+        display: flex;
+        margin: 5px 0px; 
+        width:15%;    
+    }
+    nav a:hover{
+        font-size: 16px;
+    }
+    .slika{
+        display: grid;
+    }
+    .Autor  h1{
+        text-align: center;
+        font-size: 30px;
+        text-decoration:wavy;
+    }
+    .Autor h2{
+        text-align: center;
+        display: block;
+        margin: 10px auto;
+        font-size: 20px;
+    }
+    .Autor img{
+        height: auto;
+        width: 150px;
+        margin: 20px auto;   
+    }
+    .Autor p{
+        font-size: 15px;
+        width: 70%; 
+        margin: auto;
+    }
+    .Knjiga{
+        width: 70%;
+        height: 120%;
+        margin: 10px auto;
+        padding: 10px auto;
+        display: grid;
+    }
+    .Knjiga h1{
+        text-align: center;
+        text-decoration: underline;
+        margin: 15px;
+        padding: 1px;
+    
+    }
+    .Knjiga .o-knjizi p{
+        font-size: 12px;
+        text-align: justify;
+        padding: 1px;
+        margin-left: 5px;
+        font-family: 'Roboto Slab';
+        width: 90%;
+    }
+    .Knjiga .o-knjizi, .Knjiga .slika{
+        display: grid;
+        width: 90%;
+        height: 60%;
+        padding: 5%;
+    }
+    .Knjiga .slika{
+        height: 250px;
+    }
+
+}
+
+

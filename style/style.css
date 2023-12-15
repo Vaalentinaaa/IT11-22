@@ -1,0 +1,286 @@
+body {
+    background-image: url('../jpg/pozadina3.jpg');
+}
+.pocetak {
+    color: white;
+    display: inline-flex;
+    padding: 1rem;
+}
+@keyframes float{
+    0%{
+        box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0, 6);
+        transform: translateY();
+    }
+    50%{
+        box-shadow: 0px 25px 15px 0px rgba(0, 0, 0, 0, 2);
+        transform: translateY(-20px);
+    }
+    100%{
+        box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0, 6);
+        transform: translateY(0px);
+    }
+}
+.container{
+    width: 10%;
+    height: 10%;
+    display: flex;
+    margin: 1.5rem;
+}
+.logo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0, 6);
+    transform:translateY(0px);
+    animation: float 6s ease-in-out infinite;
+}
+ .pocetak h1{
+    color: #141414;
+    text-align: center;
+    padding:2rem;
+    text-decoration: none;
+    font-size: 5em;
+    border: solid 1rem 	#ca924f;
+    background-color: 	#ca924f;
+    margin: 0.5rem 7rem; 
+    border-radius: 5rem;  
+    width: 60rem; 
+}
+nav {
+    background-color:blanchedalmond;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+nav a {
+    float:inline-start;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 0rem 3rem;
+    text-decoration: none;
+    margin: 1rem 1.5rem;
+    align-items:center;
+    font-size: 2em;
+}
+nav a:hover{
+    font-size: 3em;
+    font-style: oblique;
+    text-shadow: 3px 5px 3px #6b3e26;
+    transition: 0.5s;
+}
+.uvod {
+    margin: 2rem 15rem;
+    padding: 2rem;
+    background-image: url('../jpg/uvod.jpg');
+    text-align: center;
+    border-radius: 5rem 2rem; 
+}
+ .uvod h2{
+    font-size: 3em;
+}
+.informacije{
+    border: 0.5rem solid black;
+    background-color: black;
+    color: white;
+    margin: 1.5rem 5rem;
+    padding:1.5rem;
+    border-radius: 3rem;
+    width: 45rem;
+    display: inline-block;
+}
+.informacije p{
+    font-size:  1.5em;
+}
+.informacije h2{
+    font-size: 2.5em;
+}
+form{
+    background-color: burlywood;
+    color:#6b3e26;
+    padding: 1.5rem;
+    margin: 2rem;
+    display: inline-block;
+    font-size: 1em;
+    border-radius: 15px;
+}
+form p{
+    font-size: 1.20em;
+}
+form input{
+    border-radius: 5px;
+}
+form button{
+    border-radius: 1rem 2rem;
+    border: 1.5rem;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: #6b3e26;
+    color: white;
+    margin:0rem 1rem;
+    width: 20rem;
+}
+.my-books_KK, .my-books_RR 
+{
+    border: solid 0.10rem black;
+    text-align:start;
+    
+}
+.my-books_KK h2, .my-books_RR h2{
+    text-align: center;
+    font-size: 50px;
+    color:coral;
+    background-color: blanchedalmond;
+    padding: 1.5rem;
+    width: 30rem;
+    margin: auto;
+    border-radius: 30px;
+}
+.my-books_KK h2:hover, .my-books_RR h2:hover{
+    text-transform: uppercase;
+    color: crimson;
+    transition: 1.5s;
+}
+.my-books_KK button:hover, .my-books_RR button:hover{
+    font-size: 40px;
+    color:darkred;
+    transition: 1.5s;
+}
+.card-holder{
+    width: 14rem;
+    height: 22rem;
+    padding: 1.5rem 1.5rem 9rem 1.5rem ;
+    background-color: white;
+    border-radius: 3rem;
+    display:inline-block;
+    margin: 2rem 9rem 2rem 4rem;
+    background-color: burlywood;
+}
+.card-holder:hover{
+    width: 17rem;
+    height: 25rem;
+    font-size: 1.25rem;
+    margin: 6rem;
+    border-radius: 5rem ;
+    transition: 0.5s;
+}
+.card-holder img{
+    width:14rem;
+    border-radius: 2rem;
+}
+.card-holder img:hover{
+    width:16rem;
+    height: 25rem;
+    transition: 0.5s;
+}
+.card-holder h3{
+    font-size: 1.5em;
+    text-align: center;
+}
+.card-holder h3:hover{
+    text-align: center;
+    padding: 1.5px 1.5px 5px;
+    text-shadow: 4px 1px 7px;
+    transition: 0.5s;
+}
+
+@media only screen and (min-width: 320px) and (max-width:1023px){
+    .pocetak {
+        color: white;
+        padding:1px;
+        width: 100%;
+    }
+    .logo{
+        display: none;
+    }
+    .pocetak h1{
+        padding:6px;
+        text-align: center;
+        font-size: 15px;
+        margin: 20px 35px; 
+    }
+    nav a {
+        padding: 10px 8px ;
+        font-size: 13px;
+        display: flex;
+        margin: 5px 0px; 
+        width:15%;    
+    }
+    nav a:hover{
+        font-size: 16px;
+    }
+    .uvod {
+        width: 75%;
+        margin: 20px 40px;
+        padding: 10px;    }
+    .uvod h2{
+        font-size: 15px;
+    }
+    .informacije{
+        width: 250px;
+        height: 100%;
+        margin: 20px 25px;
+        font-size: 15px;
+        padding: 10px;
+    }
+    .informacije p{
+        font-size:  15px;
+    }
+    .informacije h2{
+        font-size: 20px;
+    }
+    form{
+        margin: 15px;
+        width: 250px;
+        height: 100%;
+        padding:5px 10px;
+    } 
+    form p{
+        font-size: 15px;
+    }
+    form h2{
+        font-size: 20px;
+    }
+    form button{
+        padding: auto;
+        margin:10px 50px;
+        width: 100px;
+    }
+    .my-books_KK h2, .my-books_RR h2{
+        font-size: 20px;
+        padding:20px;
+        width: 250px;
+        margin: 10px;
+    }
+    .card-holder:hover{
+        width: 17rem;
+        height: 25rem;
+        margin: 6rem;
+    }
+    .card-holder img:hover{
+        width:17rem;
+        height: 25rem;
+    }
+    .card-holder{
+        width: 10rem;
+        height: 15rem;
+        margin: 40px;
+    }
+    .card-holder:hover{
+        width: 11rem;
+        height: 17rem;
+        margin: 4rem;
+    }
+    .card-holder img{
+        width:10rem;
+    }
+    .card-holder img:hover{
+        width:12rem;
+        height: 16rem;
+    }  
+    .card-holder h3:hover{
+        font-size: 24px;
+    }
+}
