@@ -1,4 +1,4 @@
 User-agent: *
-disallow: /
+allow: /
 
 Sitemap: https://vaalentinaaa.github.io/IT11-22/sitemap.xml
