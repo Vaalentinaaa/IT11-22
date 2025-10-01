@@ -66,7 +66,7 @@ nav a {
     font-size: 2em;
 }
 nav a:hover{
-    font-size: 3em;
+    font-size: 2.1em;
     font-style: oblique;
     text-shadow: 3px 5px 3px #6b3e26;
     transition: 0.5s;
@@ -159,7 +159,7 @@ form button{
     background-color: burlywood;
 }
 .card-holder:hover{
-    width: 17rem;
+    width: 15rem;
     height: 25rem;
     font-size: 1.25rem;
     margin: 6rem;
@@ -171,7 +171,7 @@ form button{
     border-radius: 2rem;
 }
 .card-holder img:hover{
-    width:16rem;
+    width:14.5rem;
     height: 25rem;
     transition: 0.5s;
 }
@@ -284,3 +284,4 @@ form button{
         font-size: 24px;
     }
 }
+
